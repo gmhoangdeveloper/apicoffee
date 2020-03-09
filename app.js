@@ -28,21 +28,7 @@ app.get("/sasa", async (req, res) => {
       res.json({ message: err });
     }
   });
-  //Sumbit a post
-  router.post("/", async (req, res) => {
-    //   console.log(req.body)
-    const post = new Post({
-      title: req.body.title,
-      description: req.body.description
-    });
-  
-    try {
-      const savedPost = await post.save();
-      res.json(savedPost);
-    } catch (err) {
-      res.json({ message: err });
-    }
-  });
+ 
 //Connect TO DB
 mongoose.connect(process.env.DB_CONNECTION,{useNewUrlParser:true , useCreateIndex:true},()=>console.log('conected to DB'));
 
