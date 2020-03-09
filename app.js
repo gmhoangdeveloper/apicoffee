@@ -20,17 +20,11 @@ app.use('/postss',postsRoute);
 app.get('/',(req,res)=>{
     res.send('We are on home'); 
 })
-app.get("/sasa", async (req, res) => {
-    try {
-      const posts = await Post.find();
-      res.json(posts);
-    } catch (err) {
-      res.json({ message: err });
-    }
-  });
- 
+// app.get('/posts',(req,res)=>{
+//     res.send('We are on post'); 
+// })
 //Connect TO DB
 mongoose.connect(process.env.DB_CONNECTION,{useNewUrlParser:true , useCreateIndex:true},()=>console.log('conected to DB'));
 
 //How to we start lsitening to the server
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 5000);
