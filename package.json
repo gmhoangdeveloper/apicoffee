@@ -13,7 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "now-build":"nodemon app.js"
   },
   "author": "",
   "license": "ISC"
