@@ -14,7 +14,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "nodemon app.js",
-    "build":"./app.js"
+    "build":"node app.js"
   },
   "author": "",
   "license": "ISC"
