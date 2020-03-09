@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 // })
 //Import Router 
 const postsRoute = require('./routes/posts');
-app.use('/postss',postsRoute);
+app.use('/posts',postsRoute);
 
 
 //ROUTES
