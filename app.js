@@ -24,7 +24,7 @@ app.get('/',(req,res)=>{
 //     res.send('We are on post'); 
 // })
 //Connect TO DB
-mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser:true ,useUnifiedTopology: true, useCreateIndex:true},()=>console.log('conected to DB'));
+mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser:true , useCreateIndex:true},()=>console.log('conected to DB'));
 
 //How to we start lsitening to the server
 app.listen(process.env.PORT || 5000);
